@@ -1,0 +1,1 @@
+export default function Spinner() { return <div className='text-center p-6 text-secondary'>⏳ Carregando...</div> }

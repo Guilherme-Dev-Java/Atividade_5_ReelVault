@@ -1,0 +1,8 @@
+{
+  "home": "Home",
+  "favorites": "Favorites",
+  "genres": "Genres",
+  "search_placeholder": "Search movies...",
+  "recommendations": "Recommendations for you",
+  "no_recommendations": "Add movies to favorites to see recommendations."
+}

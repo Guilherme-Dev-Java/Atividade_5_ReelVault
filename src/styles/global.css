@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Paleta moderna cinematográfica */
+:root {
+  --carbon: #0B0F14;
+  --surface: #111827;
+  --card: #0F172A;
+  --primary: #E5E7EB;
+  --secondary: #9CA3AF;
+  --accent: #F59E0B;
+  --accent2: #10B981;
+  --accent3: #FB7185;
+}
+
+/* Gradiente clean com profundidade */
+body {
+  font-family: 'Raleway', sans-serif;
+  background: radial-gradient(1200px 600px at 10% 10%, #0F172A 0%, rgba(15, 23, 42, 0) 60%),
+    radial-gradient(1000px 500px at 90% 20%, rgba(16, 185, 129, 0.12) 0%, rgba(16, 185, 129, 0) 60%),
+    radial-gradient(900px 400px at 30% 90%, rgba(245, 158, 11, 0.15) 0%, rgba(245, 158, 11, 0) 60%),
+    linear-gradient(135deg, #0B0F14 0%, #0E141B 50%, #0B0F14 100%);
+  color: var(--primary);
+  min-height: 100vh;
+}
+
+.logo-projector {
+  animation: proj 3s ease-in-out infinite
+}
+
+@keyframes proj {
+  0% {
+    transform: translateX(-4px)
+  }
+
+  50% {
+    transform: translateX(4px)
+  }
+
+  100% {
+    transform: translateX(-4px)
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none
+}
+
+/* Utilitário para sinopses */
+.line-clamp-5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden
+}

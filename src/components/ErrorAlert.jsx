@@ -1,0 +1,1 @@
+export default function ErrorAlert({ message }) { return <div className='bg-accent3/20 text-accent3 border border-accent3/40 px-3 py-2 rounded mb-4'>{message}</div> }
